@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "author": {
-    "name": "Shivam Sharma",
-    "email": "shivamsharma77607@gmail.com",
-    "github": "@Shivam-Sharma-1",
-    "linkedin": "https://www.linkedin.com/in/shivamsharma77607"
+    "name": "Anuj Rawat",
+    "email": "rawatanuj058@gmail.com",
+    "github": "https://github.com/AnujRawat1",
+    "linkedin": "https://www.linkedin.com/in/anuj-rawat1/"
   },
   "scripts": {
     "dev": "next dev",
@@ -26,14 +26,15 @@
     "framer-motion": "^10.15.0",
     "gltfjsx": "^6.2.13",
     "maath": "^0.7.0",
-    "next": "^13.5.11",
+    "next": "^15.2.4",
     "next-themes": "^0.2.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-parallax-tilt": "^1.7.288",
     "react-type-animation": "^3.2.0",
     "react-vertical-timeline-component": "^3.6.0",
-    "three": "^0.155.0"
+    "three": "^0.175.0",
+    "three-mesh-bvh": "^0.9.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.15",

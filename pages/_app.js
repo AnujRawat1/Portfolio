@@ -26,7 +26,7 @@ export default function App({ Component, pageProps }) {
 	const title = "Portfolio | Anuj Rawat";
 	const description = "Hello! I'm Anuj Rawat, a passionate web developer and problem solver. Welcome to my portfolio";
 	const avatar = "@public/assets/logo.png";
-	const url = "https://shivam-sharma-myportfolio.vercel.app/";
+	const url = "http://localhost:3000/";
 
 	return (
 		<>
@@ -56,19 +56,19 @@ export default function App({ Component, pageProps }) {
 				<link
 					rel="apple-touch-icon"
 					sizes="180x180"
-					href="/assets/icons/favicon/apple-touch-icon.png"
+					href="/assets/logo.png"
 				/>
 				<link
 					rel="icon"
 					type="image/png"
 					sizes="32x32"
-					href="/assets/icons/favicon/favicon-32x32.png"
+					href="/assets/logo.png"
 				/>
 				<link
 					rel="icon"
 					type="image/png"
 					sizes="16x16"
-					href="/assets/icons/favicon/favicon-16x16.png"
+					href="/assets/logo.png"
 				/>
 				<link
 					rel="manifest"
