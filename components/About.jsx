@@ -28,18 +28,16 @@ function About() {
         className="mt-4 dark:text-ctnSecondaryDark text-gray-300 text-[17px] w-full leading-[30px] flex flex-col justify-between gap-6"
       >
         <div>
-          Hello! I&apos;m Anuj Rawat, a passionate web developer and problem
+          Hello! I&apos;m Anuj Rawat, a passionate software engineer and problem
           solver. 
-          {/* Currently, I&apos;m the Tech Team Lead at GDSC MVJCE, and */}
-          I&apos;m pursuing a B.Tech Degree in Computer Science and Engineering at
+          I&apos;m pursuing my B.Tech Degree in Computer Science and Engineering at
           Graphic Era Hill University in Dehradun, India, with an expected
-          graduation year of 2026. I&apos;m a software developer with experience
-          in Machine Learning. I specialize in frameworks
-          such as React, Node.js, Next.js, React-Three-Fiber, and Three.js. My
-          knowledge extends to fundamental data structures and algorithms,
-          making me well-versed in frontend web development.
+          graduation year of 2026.
+          I thrive on tackling challenging projects in AI and Machine Learning. 
+          From building predictive models to crafting innovative solutions, 
+          I enjoy pushing the boundaries of technology. 
           <br className="sm:block hidden" />
-          Let&apos;s collaborate to bring your ideas to life!
+          Let&apos;s connect and explore the future of tech together!
         </div>
         <div className="w-fit break-words">
           <Link

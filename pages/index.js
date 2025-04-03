@@ -9,6 +9,7 @@ import {
   StarsCanvas,
   Tech,
   Works,
+  Feedbacks
 } from "@/components";
 import HeroBackground from "@/components/HeroBackground";
 import EarthContainer from "@/components/EarthContainer";

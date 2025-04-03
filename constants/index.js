@@ -136,7 +136,13 @@ const technologies = {
       name: "Pandas",
       icon: "/assets/tech/Pandas.svg",
       link: "https://pandas.pydata.org/",
-    }
+    },
+    // c:\Users\rawat\Downloads\numpy.svg
+    {
+      name: "Numpy",
+      icon: "/assets/tech/numpy.svg",
+      link: "https://numpy.org/",
+    },
   ],
   tools: [
     {
@@ -294,198 +300,84 @@ const testimonials = [
 
 const projects = [
   {
-    name: "QuickEdit: AI-Powered Image & Video Editor",
+    name: "Movie Recommender System",
     description:
-      "QuickEdit is an AI-powered online image and video editor built using the Cloudinary AI API. It offers robust features for both images and videos, with user-friendly authentication and a tiered credit system. Enhance your media editing experience with cutting-edge AI tools!",
+      "Developed a Movie Recommender System using a Content-Based Filtering approach to suggest movies based on user preferences and movie metadata. Applied advanced text vectorization methods, including Bag of Words, to transform over 4800 movie descriptions into numerical vectors; enhanced the accuracy of similarity calculations for generating personalized recommendations",
     tags: [
       {
-        name: "typescript",
+        name: "Machine Learning",
         color: "blue-text-gradient",
       },
       {
-        name: "next.js",
+        name: "NLP",
         color: "green-text-gradient",
       },
       {
-        name: "tailwindcss",
+        name: "Kaggle",
         color: "pink-text-gradient",
       },
-      {
-        name: "shadcn",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "cloudinary",
-        color: "yellow-text-gradient",
-      },
     ],
-    image:
-      "https://res.cloudinary.com/dqiqi75hm/image/upload/v1734187202/quickedit/dp6y8s8dstqfpq7svmj5.png",
-    source_code_link: "https://github.com/Shivam-Sharma-1/QuickEdit",
-    deployed_link: "https://quick-edit-app.vercel.app",
+    image: "/assets/projects/Movie_Recommender.png",
+    source_code_link: "https://github.com/AnujRawat1/Movie-Recommender-System",
+    deployed_link: "https://github.com/AnujRawat1/Movie-Recommender-System",
   },
   {
-    name: "FigPro",
+    name: "SMS Spam Detection",
     description:
-      "FigPro is a web-based collaborative design tool similar to Figma, built using Next.js, TypeScript, Tailwind CSS, and LiveBlocks API, Fabric.js. With FigPro, teams can seamlessly collaborate on designing interfaces in real-time with a plethora of features.",
+      "Built an Email Spam Classifier using machine learning algorithms like Naive Bayes , Logistic Regression, Random Forest for accurate spam detection. Applied text preprocessing techniques (tokenization, stemming, vectorization) to prepare the email data.  Achieved 98.16% accuracy and validated model performance using cross-validation and confusion matrix.",
     tags: [
       {
-        name: "typescript",
+        name: "Machine Learning",
         color: "blue-text-gradient",
       },
       {
-        name: "next.js",
+        name: "NLP",
         color: "green-text-gradient",
       },
       {
-        name: "tailwindcss",
+        name: "Kaggle",
         color: "pink-text-gradient",
       },
       {
-        name: "fabricjs",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "liveblocks",
+        name: "Pandas",
         color: "yellow-text-gradient",
       },
     ],
-    image: "/assets/projects/fig-pro.png",
-    source_code_link: "https://github.com/Shivam-Sharma-1/FigPro",
-    deployed_link: "https://fig-pro-github.vercel.app",
+    image: "/assets/projects/Spam_Mail_Detection.png",
+    source_code_link: "https://github.com/AnujRawat1/Email-SMS-Spam-Classifier",
+    deployed_link: "https://github.com/AnujRawat1/Email-SMS-Spam-Classifier",
   },
-  // {
-  //   name: "GDSC Website",
-  //   description:
-  //     "Welcome to the official repository for the GDSC MVJCE Website, built with Next.js, Styled Components, and Prisma! This website serves as the central hub for all things tech-related at GDSC MVJCE. From insightful blog posts to incredible community projects, and from exciting tech events to getting to know our team, you'll find it all here.",
-  //   tags: [
-  //     {
-  //       name: "next.js",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "styled-components",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "three.js",
-  //       color: "pink-text-gradient",
-  //     },
-  //     {
-  //       name: "prisma",
-  //       color: "orange-text-gradient",
-  //     },
-  //     {
-  //       name: "framer-motion",
-  //       color: "yellow-text-gradient",
-  //     },
-  //   ],
-  //   image: "/assets/projects/gdsc-website.png",
-  //   source_code_link: "https://github.com/GDSC-MVJCE/gdscmvjce-website.git",
-  //   deployed_link: "https://gdscmvjce.vercel.app/",
-  // },
   {
-    name: "Facility Management System",
+    name: "Stock Price Prediction",
     description:
-      "The Facility Management System is a comprehensive management solution developed using the MERN (MongoDB, Express.js, React, Node.js) stack. It allows users to book time slots in facilities and provides role-based access control for various functionalities.",
+      "Designed a real-time stock price prediction model using Long Short-Term Memory (LSTM) networks, implemented in Python. Processed and analyzed over 10 years of historical data using Tiingo, improving prediction reliability for future stock prices To enable visualisation and user interaction, an interactive web application was designed utilising Streamlit.",
     tags: [
       {
-        name: "typescript",
+        name: "Machine Learning",
         color: "blue-text-gradient",
       },
       {
-        name: "react",
+        name: "Deep Learning",
         color: "green-text-gradient",
       },
       {
-        name: "tailwindcss",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "node.js",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "tanstack/react-query",
+        name: "LSTM",
         color: "yellow-text-gradient",
       },
+      {
+        name: "Tiingo",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Kaggle",
+        color: "pink-text-gradient",
+      },
     ],
-    image: "/assets/projects/facility-manager.png",
-    source_code_link:
-      "https://github.com/Shivam-Sharma-1/Facility-Management-System",
-    deployed_link:
-      "https://github.com/Shivam-Sharma-1/Facility-Management-System?tab=readme-ov-file#demo",
+    image: "/assets/projects/Stock_Price.png",
+    source_code_link: "https://github.com/AnujRawat1/Stock-Price-Prediction-Using-Tiingo-",
+    deployed_link: "https://github.com/AnujRawat1/Stock-Price-Prediction-Using-Tiingo-",
   },
-  // {
-  //   name: "Netflix Clone",
-  //   description:
-  //     "Netflix-Clone is a fully responsive web application that replicates the popular streaming platform Netflix. It is built using Next.js, Prisma, React, NextAuth.js, Tailwind CSS, MongoDB and TypeScript. This project aims to showcase the implementation of these technologies to create a feature-rich clone of Netflix.",
-  //   tags: [
-  //     {
-  //       name: "next.js",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "typescript",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "tailwindcss",
-  //       color: "pink-text-gradient",
-  //     },
-  //     {
-  //       name: "mongodb",
-  //       color: "orange-text-gradient",
-  //     },
-  //   ],
-  //   image: "/assets/projects/netflix-clone.png",
-  //   source_code_link: "https://github.com/Shivam-Sharma-1/Netflix-Clone.git",
-  //   deployed_link: "https://netflix-clone12345.vercel.app",
-  // },
-  // {
-  //   name: "Van-Life",
-  //   description:
-  //     "VanLife is a user-friendly website built with React that simplifies van searches. It is a web app used to browse different types of vans. It allows users to log in and offers convenient tag-based filtering for easy browsing.",
-  //   tags: [
-  //     {
-  //       name: "react",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "mirage.js",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "firebase-firestore",
-  //       color: "pink-text-gradient",
-  //     },
-  //   ],
-  //   image: "/assets/projects/vanlife.png",
-  //   source_code_link: "https://github.com/Shivam-Sharma-1/Van-Life.git",
-  //   deployed_link: "https://myvanlife.netlify.app",
-  // },
-  // {
-  // 	name: "Spooky-Run",
-  // 	description:
-  // 		"Spooky Run is a web based 2D arcade style game that allows players to play as a lost dog finding its way back home through a spooky forest. The game is built using vanilla JavaScript and utilizes HTML5 and the 'canvas' element to render graphics and handle user input.",
-  // 	tags: [
-  // 		{
-  // 			name: "html5",
-  // 			color: "blue-text-gradient"
-  // 		},
-  // 		{
-  // 			name: "css3",
-  // 			color: "green-text-gradient"
-  // 		},
-  // 		{
-  // 			name: "javascript",
-  // 			color: "pink-text-gradient"
-  // 		}
-  // 	],
-  // 	image: "/assets/projects/spooky-run.png",
-  // 	source_code_link: "https://github.com/Shivam-Sharma-1/Spooky-Run.git",
-  // 	deployed_link: "https://shivam-sharma-1.github.io/Spooky-Run"
-  // }
+  
 ];
 
 const socials = [
