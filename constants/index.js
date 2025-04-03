@@ -343,7 +343,7 @@ const projects = [
         color: "yellow-text-gradient",
       },
     ],
-    image: "/assets/projects/Spam_Mail_Detection.png",
+    image: "/assets/projects/Spam_SMS_Detection.png",
     source_code_link: "https://github.com/AnujRawat1/Email-SMS-Spam-Classifier",
     deployed_link: "https://github.com/AnujRawat1/Email-SMS-Spam-Classifier",
   },
