@@ -109,11 +109,11 @@ const technologies = {
   ],
   frameworks: [
     
-    // {
-    //   name: "SpringBoot",
-    //   icon: "/assets/tech/Spring_Boot.svg",
-    //   link: "https://spring.io/projects/spring-boot",
-    // },
+    {
+      name: "SpringBoot",
+      icon: "/assets/tech/Spring_Boot.svg",
+      link: "https://spring.io/projects/spring-boot",
+    },
     {
       name: "Tensorflow",
       icon: "/assets/tech/Tensorflow_logo.svg",
@@ -122,11 +122,11 @@ const technologies = {
 
   ],
   libraries: [
-    // {
-    //   name: "React",
-    //   icon: "/assets/tech/react.svg",
-    //   link: "https://react.dev/",
-    // },
+    {
+      name: "React",
+      icon: "/assets/tech/react.svg",
+      link: "https://react.dev/",
+    },
     {
       name: "Scikit-Learn",
       icon: "/assets/tech/scikit-learn.svg",
@@ -137,7 +137,6 @@ const technologies = {
       icon: "/assets/tech/Pandas.svg",
       link: "https://pandas.pydata.org/",
     },
-    // c:\Users\rawat\Downloads\numpy.svg
     {
       name: "Numpy",
       icon: "/assets/tech/numpy.svg",
@@ -386,7 +385,7 @@ const projects = [
   {
     name: "Smart Email Reply Generator",
     description:
-      "Designed a real-time stock price prediction model using Long Short-Term Memory (LSTM) networks, implemented in Python. Processed and analyzed over 10 years of historical data using Tiingo, improving prediction reliability for future stock prices To enable visualisation and user interaction, an interactive web application was designed utilising Streamlit.",
+      "Email Reply Generator is a productivity tool designed to streamline professional communication. The backend, built using Java Spring Boot, handles the logic to generate context-aware replies based on input email content and selected tone. The React-based frontend provides a clean and intuitive UI to interact with the service. Additionally, a Chrome extension integrates directly with Gmail, allowing users to generate smart replies within the email compose window itself, enhancing accessibility and workflow efficiency.",
     tags: [
       {
         name: "Spring Boot",
@@ -411,7 +410,7 @@ const projects = [
     ],
     image: "/assets/projects/Email_Reply.jpg",
     source_code_link: "https://github.com/AnujRawat1/Email-Reply-Generator.git",
-    deployed_link: "https://github.com/AnujRawat1/Email-Reply-Generator.git",
+    deployed_link: "https://smart-email-reply-generator.vercel.app/",
     category: "java",
   },
 
@@ -419,7 +418,7 @@ const projects = [
   {
     name: "AI Based Research Assistant",
     description:
-      "Designed a real-time stock price prediction model using Long Short-Term Memory (LSTM) networks, implemented in Python. Processed and analyzed over 10 years of historical data using Tiingo, improving prediction reliability for future stock prices To enable visualisation and user interaction, an interactive web application was designed utilising Streamlit.",
+      "AI-Powered Research Assistant is a versatile tool designed to enhance productivity while reading or researching online. Built with Java Spring Boot for the backend, the assistant supports multiple AI-driven operations such as summarization, paraphrasing, translation, code generation, and custom prompts. Users can interact directly through a Chrome extension that overlays these features on any webpage. It also includes the ability to save important notes and download them locally, making it a valuable assistant for academic, technical, or professional use cases.",
     tags: [
       {
         name: "Spring Boot",
