@@ -97,10 +97,9 @@ function Works() {
 
   const [activeFilter, setActiveFilter] = useState("ai-ml");
 
-  const filteredProjects =
-    activeFilter === "ai-ml"
-      ? projects
-      : projects.filter((proj) => proj.category === activeFilter);
+  const filteredProjects = projects.filter(
+    (proj) => proj.category === activeFilter
+  );
 
   const getButtonClasses = (category) =>
     `px-6 py-2 rounded-xl text-sm font-semibold shadow-md transition-transform duration-300 hover:scale-105 ${

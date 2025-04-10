@@ -298,6 +298,9 @@ const testimonials = [
 ];
 
 const projects = [
+
+  // AI ML Projects 
+  
   {
     name: "Movie Recommender System",
     description:
