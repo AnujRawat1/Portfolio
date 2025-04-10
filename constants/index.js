@@ -320,6 +320,7 @@ const projects = [
     image: "/assets/projects/Movie_Recommender.png",
     source_code_link: "https://github.com/AnujRawat1/Movie-Recommender-System",
     deployed_link: "https://github.com/AnujRawat1/Movie-Recommender-System",
+    category: "ai-ml",
   },
   {
     name: "SMS Spam Detection",
@@ -346,6 +347,7 @@ const projects = [
     image: "/assets/projects/Spam_SMS_Detection.png",
     source_code_link: "https://github.com/AnujRawat1/Email-SMS-Spam-Classifier",
     deployed_link: "https://github.com/AnujRawat1/Email-SMS-Spam-Classifier",
+    category: "ai-ml",
   },
   {
     name: "Stock Price Prediction",
@@ -373,12 +375,74 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: "/assets/projects/Stock_Price.png",
+    image: "/assets/projects/Stock_Price.jpg",
     source_code_link: "https://github.com/AnujRawat1/Stock-Price-Prediction-Using-Tiingo-",
     deployed_link: "https://github.com/AnujRawat1/Stock-Price-Prediction-Using-Tiingo-",
+    category: "ai-ml",
+  },
+
+// JAVA PROJECTs
+
+  {
+    name: "Smart Email Reply Generator",
+    description:
+      "Designed a real-time stock price prediction model using Long Short-Term Memory (LSTM) networks, implemented in Python. Processed and analyzed over 10 years of historical data using Tiingo, improving prediction reliability for future stock prices To enable visualisation and user interaction, an interactive web application was designed utilising Streamlit.",
+    tags: [
+      {
+        name: "Spring Boot",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Microservices",
+        color: "green-text-gradient",
+      },
+      {
+        name: "React",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "Material UI",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Chrome Extension",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: "/assets/projects/Email_Reply.jpg",
+    source_code_link: "https://github.com/AnujRawat1/Email-Reply-Generator.git",
+    deployed_link: "https://github.com/AnujRawat1/Email-Reply-Generator.git",
+    category: "java",
+  },
+
+
+  {
+    name: "AI Based Research Assistant",
+    description:
+      "Designed a real-time stock price prediction model using Long Short-Term Memory (LSTM) networks, implemented in Python. Processed and analyzed over 10 years of historical data using Tiingo, improving prediction reliability for future stock prices To enable visualisation and user interaction, an interactive web application was designed utilising Streamlit.",
+    tags: [
+      {
+        name: "Spring Boot",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Microservices",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Chrome Extension",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: "/assets/projects/Research_Assistant.png",
+    source_code_link: "https://github.com/AnujRawat1/Research-Assistant.git",
+    deployed_link: "https://github.com/AnujRawat1/Research-Assistant.git",
+    category: "java",
   },
   
 ];
+
+
 
 const socials = [
   {

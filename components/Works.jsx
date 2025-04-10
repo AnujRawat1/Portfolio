@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -17,8 +17,12 @@ function ProjectCard({
   image,
   source_code_link,
   deployed_link,
+  category
 }) {
   const CHAR_LIMIT = 280;
+
+
+
 
   return (
     <motion.div
@@ -85,7 +89,27 @@ function ProjectCard({
   );
 }
 
+
+
+
 function Works() {
+
+
+  const [activeFilter, setActiveFilter] = useState("ai-ml");
+
+  const filteredProjects =
+    activeFilter === "ai-ml"
+      ? projects
+      : projects.filter((proj) => proj.category === activeFilter);
+
+  const getButtonClasses = (category) =>
+    `px-6 py-2 rounded-xl text-sm font-semibold shadow-md transition-transform duration-300 hover:scale-105 ${
+      activeFilter === category
+        ? "bg-primary text-white"
+        : "bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200"
+  }`;
+
+
   return (
     <section className="xl:my-36 md:mx-36 p-8 " id="projects">
       <motion.div
@@ -113,10 +137,49 @@ function Works() {
         </motion.p>
       </div>
 
+      {/* Category Buttons */}
+      <div className="mt-8 flex justify-center gap-4 flex-wrap">
+        <button
+          onClick={() => setActiveFilter("ai-ml")}
+          className={`px-8 py-3 rounded-2xl text-base font-semibold transition duration-300 transform hover:scale-105 shadow-lg ${
+            activeFilter === "ai-ml"
+              ? "bg-gradient-to-r from-indigo-500 to-purple-600 text-white"
+              : "bg-gradient-to-r from-gray-200 to-gray-300 dark:from-gray-700 dark:to-gray-800 text-gray-800 dark:text-gray-200"
+          }`}
+        >
+          AI/ML Projects
+        </button>
+        <button
+          onClick={() => setActiveFilter("java")}
+          className={`px-8 py-3 rounded-2xl text-base font-semibold transition duration-300 transform hover:scale-105 shadow-lg ${
+            activeFilter === "java"
+              ? "bg-gradient-to-r from-green-400 to-blue-500 text-white"
+              : "bg-gradient-to-r from-gray-200 to-gray-300 dark:from-gray-700 dark:to-gray-800 text-gray-800 dark:text-gray-200"
+          }`}
+        >
+          Java Projects
+        </button>
+        {/* <button
+          onClick={() => setActiveFilter("other")}
+          className={`px-8 py-3 rounded-2xl text-base font-semibold transition duration-300 transform hover:scale-105 shadow-lg ${
+            activeFilter === "other"
+              ? "bg-gradient-to-r from-pink-500 to-red-500 text-white"
+              : "bg-gradient-to-r from-gray-200 to-gray-300 dark:from-gray-700 dark:to-gray-800 text-gray-800 dark:text-gray-200"
+          }`}
+        >
+          Other Projects
+        </button> */}
+      </div>
+
+      {/* Project Cards */}
       <div className="md:mt-20 mt-10 flex justify-center flex-wrap gap-7">
-        {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
-        ))}
+        {filteredProjects.length > 0 ? (
+          filteredProjects.map((project, index) => (
+            <ProjectCard key={`project-${index}`} index={index} {...project} />
+          ))
+        ) : (
+          <p className="text-center mt-10 text-gray-500">No projects found.</p>
+        )}
       </div>
     </section>
   );
