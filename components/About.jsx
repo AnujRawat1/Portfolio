@@ -28,12 +28,12 @@ function About() {
         className="mt-4 dark:text-ctnSecondaryDark text-gray-300 text-[17px] w-full leading-[30px] flex flex-col justify-between gap-6"
       >
         <div>
-          Hello! I&apos;m Anuj Rawat, a passionate software engineer and problem
+          Hello! I&apos;m <b className="text-white">Anuj Rawat</b>, a passionate software engineer and problem
           solver. 
           I&apos;m pursuing my B.Tech Degree in Computer Science and Engineering at
           Graphic Era Hill University in Dehradun, India, with an expected
           graduation year of 2026.
-          I thrive on tackling challenging projects in AI and Machine Learning. 
+          I thrive on tackling challenging projects in <b className="text-white">Machine Learning and Java Backend Developement</b>. 
           From building predictive models to crafting innovative solutions, 
           I enjoy pushing the boundaries of technology. 
           <br className="sm:block hidden" />

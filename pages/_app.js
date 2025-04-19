@@ -25,7 +25,7 @@ export default function App({ Component, pageProps }) {
 
 	const title = "Portfolio | Anuj Rawat";
 	const description = "Hello! I'm Anuj Rawat, a passionate web developer and problem solver. Welcome to my portfolio";
-	const avatar = "@public/assets/logo.png";
+	const avatar = "@public/assets/avatar.jpg";
 	const url = "http://localhost:3000/";
 
 	return (
@@ -46,29 +46,24 @@ export default function App({ Component, pageProps }) {
 				<meta property="og:url" content={url} />
 				<meta property="og:type" content="website" />
 
-				<meta property="twitter:image" content={avatar} />
-				<meta property="twitter:card" content="summary_large_image" />
-				<meta name="twitter:creator" content="@Shivam_1_Sharma" />
-				<meta property="twitter:title" content={title} />
-				<meta property="twitter:description" content={description} />
 
 				<link rel="canonical" href={url} />
 				<link
 					rel="apple-touch-icon"
 					sizes="180x180"
-					href="/assets/logo.png"
+					href="/assets/avatar.jpg"
 				/>
 				<link
 					rel="icon"
 					type="image/png"
 					sizes="32x32"
-					href="/assets/logo.png"
+					href="/assets/avatar.jpg"
 				/>
 				<link
 					rel="icon"
 					type="image/png"
 					sizes="16x16"
-					href="/assets/logo.png"
+					href="/assets/avatar.jpg"
 				/>
 				<link
 					rel="manifest"

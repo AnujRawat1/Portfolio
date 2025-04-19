@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import DOMPurify from "dompurify";
+import axios from "axios";
 
 import { slideIn } from "../utils/motion";
 
@@ -36,38 +37,35 @@ function Contact() {
       return;
     }
 
+    const sanitizedName = DOMPurify.sanitize(form.name);
+    const sanitizedEmail = DOMPurify.sanitize(form.email);
+    const sanitizedMessage = DOMPurify.sanitize(form.message);
+
     setLoading(true);
 
-    emailjs
-      .send(
-        process.env.NEXT_PUBLIC_SERVICE_ID,
-        process.env.NEXT_PUBLIC_TEMPLATE_ID,
-        {
-          from_name: DOMPurify.sanitize(form.name),
-          to_name: "Anuj Rawat",
-          from_email: DOMPurify.sanitize(form.email),
-          to_email: "rawatanuj058@gmail.com",
-          message: DOMPurify.sanitize(form.message),
-        },
-        process.env.NEXT_PUBLIC_EMAILJS_KEY
-      )
-      .then(
-        () => {
-          setLoading(false);
-          alert("Thank you for your message. I will get back to you soon.");
+    axios.post("http://localhost:8080/api/email/send", {
+      to: "rawatanuj058@gmail.com",
+      subject: "Mail From Anuj PORTFOLIO . Important !!",
+      username: sanitizedName,
+      from: sanitizedEmail,
+      body: sanitizedMessage,
+    })
+    .then(() => {
+      setLoading(false);
+      alert("Thank you for your message. I will get back to you soon.");
+    
+      setForm({
+        name: "",
+        email: "",
+        message: "",
+      });
+    })
+    .catch((error) => {
+      setLoading(false);
+      console.log(error);
+      alert("Something went wrong. Please try again later.");
+    });
 
-          setForm({
-            name: "",
-            email: "",
-            message: "",
-          });
-        },
-        (error) => {
-          setLoading(false);
-          console.log(error);
-          alert("Something went wrong. Please try again later.");
-        }
-      );
   };
 
   return (

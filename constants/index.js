@@ -46,7 +46,7 @@ const services = [
     icon: <BackendIcon />,
   },
   {
-    title: "AI / ML Engineer",
+    title: "Machine Learning Engineer",
     icon: <FrontendIcon />,
   },
   {
@@ -384,7 +384,37 @@ const projects = [
   },
 
 // JAVA PROJECTs
-
+  {
+    name: "Linkit",
+    description:
+      "Email Reply Generator is a productivity tool designed to streamline professional communication. The backend, built using Java Spring Boot, handles the logic to generate context-aware replies based on input email content and selected tone. The React-based frontend provides a clean and intuitive UI to interact with the service. Additionally, a Chrome extension integrates directly with Gmail, allowing users to generate smart replies within the email compose window itself, enhancing accessibility and workflow efficiency.",
+    tags: [
+      {
+        name: "Spring Boot",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Microservices",
+        color: "green-text-gradient",
+      },
+      {
+        name: "React",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "Material UI",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Web Socketing",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: "/assets/projects/LinkIt.png",
+    source_code_link: "https://github.com/AnujRawat1/LinkIt.git",
+    deployed_link: "https://linkit-ten.vercel.app/",
+    category: "java",
+  },
   {
     name: "Smart Email Reply Generator",
     description:
