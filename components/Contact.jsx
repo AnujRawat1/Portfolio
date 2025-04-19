@@ -42,8 +42,8 @@ function Contact() {
     const sanitizedMessage = DOMPurify.sanitize(form.message);
 
     setLoading(true);
-
-    axios.post("http://localhost:8080/api/email/send", {
+    // Backend Email server Link : http://localhost:8080/api/email/send
+    axios.post("https://email-sender-portfolio-8r5x.onrender.com", {
       to: "rawatanuj058@gmail.com",
       subject: "Mail From Anuj PORTFOLIO . Important !!",
       username: sanitizedName,
