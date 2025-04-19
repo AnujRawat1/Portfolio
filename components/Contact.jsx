@@ -43,7 +43,7 @@ function Contact() {
 
     setLoading(true);
     // Backend Email server Link : http://localhost:8080/api/email/send
-    axios.post("https://email-sender-portfolio-8r5x.onrender.com", {
+    axios.post("https://email-sender-portfolio-8r5x.onrender.com/api/email/send", {
       to: "rawatanuj058@gmail.com",
       subject: "Mail From Anuj PORTFOLIO . Important !!",
       username: sanitizedName,
